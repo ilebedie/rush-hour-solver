@@ -183,7 +183,7 @@ class GameState:
 class Solver:
     ''' Solver implements BFS in order to find puzzle solution
     '''
-    def __init__(self, initial_board_state, debug_mode):
+    def __init__(self, initial_board_state):
         # BFS queue:
         # Board states have to be checked, also contains the sequence of moves
         self.queue = [(initial_board_state, 'initial position')]
@@ -225,6 +225,6 @@ if __name__ == '__main__':
     initial_board = read_input('input_empty.txt')
     #initial_board = read_input('input_1_car_on_a_way.txt')
     #initial_board = read_input('input_2_car_on_a_way.txt')
-    solution = Solver(initial_board, debug_mode=True).solve()
+    solution = Solver(initial_board).solve()
     print(solution)
 
