@@ -1,5 +1,4 @@
 # rush-hour-solver
----
 This is python (very slow BFS) solution for [Rush Hour board game](https://en.wikipedia.org/wiki/Rush_Hour_(board_game)).
 ---
 Objective is to find a sequence of moves so that one would be able to move the red car to the exit at right side of the board.
